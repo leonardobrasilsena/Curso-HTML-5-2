@@ -6,15 +6,25 @@ body {
 main > h1{
     font-size:60px;
     background-color: rgb(120,30,60);
+    border-bottom:10px solid black;
     color: rgb(250,255,250);
     text-align: center;
     font-family:"open sans",sans-serif;
     padding:20px;
     margin:0px;
+    text-transform: uppercase;
+}
+.container {
+    width:880px;
+    display:block;
+    position: relative;
+    margin:auto;
+    padding-bottom:80px;
 }
 h2{
     font-size: 40px;
     font-family:"open sans", sans-serif;
+    clear:both;
 }
 p{
     text-align: justify;
@@ -26,4 +36,91 @@ blockquote {
     border:10px solid #C2CCCA;
     width: 250px;
     margin:20px;
+    box-sizing: border-box;
+}
+strong {
+    font-weight: 600;
+}
+em{
+    font-style: italic;
+}
+aside {
+    background-color: #3C1D3D;
+    color:#F2FFFC;
+    text-align: center;
+    padding:20px;
+    font-family:"open sans condensed", sans-serif;
+}
+nav h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+nav a{
+    color:inherit;
+}
+.icones-sociais li{
+    display:inline-block;
+}
+footer {
+    background-color: #000;
+    color:#FE2FFFC;
+    padding: 20px;
+}
+.icones-sociais a {
+    width:40px;
+    height:40px;
+    display: inline-block;
+    text-indent:-9999px;
+}
+.github {
+    background-image: url("github.png");
+}
+.twitter {
+    background-image: url("twitter.png");
+}
+.linkedin{
+    background-image:url("linkedin.png")
+}
+.fiat {
+    float: right;
+    margin-left:40px;
+}
+.petrobras {
+    float:left;
+    margin-right: 40px;
+}
+aside, .minhafoto {
+    float: right;
+    box-sizing: border-box;
+    z-index:1;
+    width:16%;
+    border-left:10px solid black;
+    border-bottom: 10px solid black;
+}
+aside {
+    z-index:0;
+    clear: right;
+    width:15%;
+    position: relative;
+    top:285px;
+}
+main{
+    float: left;
+    width:85%;
+}
+footer {
+    bottom:0px;
+    position: fixed;
+    clear: both;
+    color:white;
+    width:100%;
+}
+cite{
+    font-style: italic;
+    float: right;
+}
+.minhafoto {
+    position: absolute;
+    top:0px;
+    right:0px;
 }
